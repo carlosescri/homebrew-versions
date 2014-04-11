@@ -1,23 +1,12 @@
 require 'formula'
 
-class Nginx < Formula
+class Nginx1119 < Formula
   homepage 'http://nginx.org/'
   url 'http://nginx.org/download/nginx-1.1.19.tar.gz'
   sha1 '8d216d340c45c273bfd8ca65a74c8544b45f008a'
   revision 1
 
-  # devel do
-  #   url 'http://nginx.org/download/nginx-1.5.13.tar.gz'
-  #   sha1 'f0ee0d2545978c8cf5ca3a5e70fcd6b27c4f6191'
-  # end
-
   head 'http://hg.nginx.org/nginx/', :using => :hg
-
-  # bottle do
-  #   sha1 "82a7fae708d620b7d95ed68b5b99c0c8cc2fadb6" => :mavericks
-  #   sha1 "3319a4c1a839d7ebad454718cda95a93e9abc0dc" => :mountain_lion
-  #   sha1 "87b243bb95ab9ae2d1edfe1f19437963ed6e3728" => :lion
-  # end
 
   env :userpaths
 
