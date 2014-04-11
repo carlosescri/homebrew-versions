@@ -1,10 +1,11 @@
 require 'formula'
 
-class Nginx1119 < Formula
+class Nginx < Formula
   homepage 'http://nginx.org/'
   url 'http://nginx.org/download/nginx-1.1.19.tar.gz'
   sha1 '8d216d340c45c273bfd8ca65a74c8544b45f008a'
   revision 1
+  version "1.1.19"
 
   head 'http://hg.nginx.org/nginx/', :using => :hg
 
